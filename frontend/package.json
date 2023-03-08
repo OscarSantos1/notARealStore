@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=7200 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "@react-email/button": "^0.0.6",
+    "@react-email/container": "^0.0.7-canary.1",
+    "@react-email/head": "^0.0.4",
+    "@react-email/html": "^0.0.4",
+    "@react-email/img": "^0.0.4",
+    "@react-email/link": "^0.0.4",
+    "@react-email/preview": "^0.0.5",
+    "@react-email/render": "^0.0.6",
+    "@react-email/section": "^0.0.7-canary.1",
+    "@react-email/text": "^0.0.4",
+    "@stripe/react-stripe-js": "^1.16.4",
+    "@stripe/stripe-js": "^1.46.0",
+    "axios": "^1.2.2",
+    "fs": "^0.0.1-security",
+    "next": "13.1.1",
+    "nodemailer": "^6.9.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}

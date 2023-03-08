@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.jostfamily {
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cursor-x {
+  cursor: url("../public/x.png"), auto;
+}
+
+/* ANIMATIONS */
+
+.bounce-in {
+  animation: bounce-in 1s ease 1;
+}
+@keyframes bounce-in {
+  0% {
+    transform: translateY(0);
+    border-radius: 9999px;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+    border-radius: 6rem;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 3rem;
+  }
+}
+
+.bounce-out {
+  animation: bounce-out 1s ease 1;
+}
+@keyframes bounce-out {
+  0% {
+    transform: translateY(0);
+    border-radius: 3rem;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+    border-radius: 6rem;
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 9999px;
+  }
+}
+
+.fade-in {
+  animation: fade-in 700ms linear 1;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
