@@ -31,6 +31,10 @@ h1 {
   scrollbar-width: none; /* Firefox */
 }
 
+.hold-aspect {
+  aspect-ratio: 1/1;
+}
+
 .cursor-x {
   cursor: url("../public/x.png"), auto;
 }

@@ -41,22 +41,21 @@ const item = ({ item }) => {
         <title>{`${item.name} - ${item.color} | Damn Shop`}</title>
       </Head>
       <div className="static md:relative h-screen w-screen bg-white">
-        <div className="static md:relative flex flex-col md:flex-row h-screen w-screen">
-          <div className="hidden md:flex flex-[0.5]" />
-          <div className="flex-1 md:h-full md:p-5 md:pt-11 md:pr-[60px]">
-            <div className="static md:relative h-screen w-screen md:h-[675px] md:w-[450px]">
+        <div className="static md:relative flex flex-col md:flex-row md:items-end md:min-h-[550px] h-screen w-screen md:pb-8">
+          <div className="flex-1 flex md:items-end md:justify-end md:h-full min-w-max md:pl-2 md:p-0 md:pt-11 md:pr-[16px] lg:pr-[90px]">
+            <div className="block static md:relative h-screen w-screen md:h-full md:w-auto ">
               <div
                 id="imageNav"
-                className="h-[90%] w-screen md:h-[675px] md:w-[450px] overflow-auto hide-scroll"
+                className="h-[90%] w-screen md:h-full md:w-auto overflow-auto hide-scroll"
               >
                 {item.images.map((image, index) => (
                   <img
+                    className="cursor-pointer w-screen md:h-full md:w-auto"
                     onClick={() => handleZoom(image)}
                     id={`${index}`}
                     key={index}
                     src={`http://localhost:5001${image}`}
                     alt="/"
-                    className="cursor-pointer w-screen md:h-[675px] md:w-[450px]"
                     layout="responsive"
                   />
                 ))}
@@ -76,7 +75,7 @@ const item = ({ item }) => {
             </div>
           </div>
           <div className="fixed bottom-0 w-screen px-6 mx-auto md:static bg-white md:flex-[0.7] flex flex-col md:justify-end font-light">
-            <div className="flex flex-col-reverse gap-2 justify-start md:gap-4 md:min-w-[300px] md:h-1/2 md:pr-14 mt-3 md:mt-14 md:mb-11">
+            <div className="flex flex-col-reverse gap-2 justify-start md:gap-4 md:min-w-[300px] md:h-1/2 lg:pr-14 mt-3 md:mt-14">
               <button
                 onClick={() =>
                   selected

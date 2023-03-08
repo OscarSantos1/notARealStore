@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/catalogue/[id]": "pages/catalogue/[id].js",
-  "/cart": "pages/cart.js",
-  "/item/[id]": "pages/item/[id].js"
+  "/item/[id]": "pages/item/[id].js",
+  "/catalogue/[id]": "pages/catalogue/[id].js"
 }
