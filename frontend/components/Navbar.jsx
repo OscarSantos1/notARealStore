@@ -9,6 +9,8 @@ const Navbar = () => {
   const { token, userName } = useShoppingCart();
   const [nav, setNav] = useState(false);
   const [login, setLogin] = useState(false);
+  const [selected, setSelected] = useState("");
+  const [width, setWidth] = useState();
   const [register, setRegister] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,9 +20,14 @@ const Navbar = () => {
 
   const handleNav = (c) => {
     router.push(`/catalogue/${c}`);
+    setWidth(window.innerWidth);
+    setSelected(c);
     setTimeout(() => {
       setNav(!nav);
-    }, 170);
+    }, 210);
+    setTimeout(() => {
+      setSelected("");
+    }, 400);
   };
 
   const handleLogin = () => {
@@ -86,8 +93,14 @@ const Navbar = () => {
         }
       >
         <div className="md:pl-2 md:mr-2 text-black jostfamily">
-          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-5 md:gap-0 text-lg md:text-sm font-light bg-gradient-to-r w-screen md:w-auto h-screen md:h-auto from-lime-400 to-[#b9ff17] pl-6 pr-2 md:pr-0">
-            <div className="cursor-pointer inline-block p-[5px] hover:underline">
+          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-5 md:gap-0 text-lg md:text-sm font-light w-screen md:w-auto h-screen md:h-auto bg-[#F6F6F6] md:bg-gradient-to-r md:from-lime-400 md:to-[#b9ff17] pl-6 pr-2 md:pr-0">
+            <div
+              className={
+                selected == "man-tshirts" && width <= 767
+                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  : "cursor-pointer inline-block p-[5px] hover:underline"
+              }
+            >
               <div
                 onClick={() => {
                   handleNav("man-tshirts");
@@ -96,7 +109,13 @@ const Navbar = () => {
                 T-SHIRTS
               </div>
             </div>
-            <div className="cursor-pointer inline-block p-[5px] hover:underline">
+            <div
+              className={
+                selected == "man-jackets" && width <= 767
+                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  : "cursor-pointer inline-block p-[5px] hover:underline"
+              }
+            >
               <div
                 onClick={() => {
                   handleNav("man-jackets");
@@ -105,7 +124,13 @@ const Navbar = () => {
                 JACKETS
               </div>
             </div>
-            <div className="cursor-pointer inline-block p-[5px] hover:underline">
+            <div
+              className={
+                selected == "man-shoes" && width <= 767
+                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  : "cursor-pointer inline-block p-[5px] hover:underline"
+              }
+            >
               <div
                 onClick={() => {
                   handleNav("man-shoes");
@@ -114,7 +139,13 @@ const Navbar = () => {
                 SHOES
               </div>
             </div>
-            <div className="cursor-pointer inline-block p-[5px] hover:underline">
+            <div
+              className={
+                selected == "man-accessories" && width <= 767
+                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  : "cursor-pointer inline-block p-[5px] hover:underline"
+              }
+            >
               <div
                 onClick={() => {
                   handleNav("man-accessories");

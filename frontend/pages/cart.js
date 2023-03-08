@@ -15,10 +15,8 @@ const cart = () => {
       <Head>
         <title>Cart - Damn Shop</title>
       </Head>
-      <div
-        className={`relative flex justify-center h-screen w-screen pb-[48px] pt-20 md:pt-40 md:px-20 bg-white/70`}
-      >
-        <div className="flex flex-col md:flex-row md:h-96 md:min-w-[400px] bg-white rounded-3xl overflow-auto pl-6 pb-6 md:pb-0 hide-scroll overscroll-contain">
+      <div className="relative flex justify-start h-screen w-screen pb-[48px] pt-[79px] md:pt-40 md:px-20">
+        <div className="flex flex-col md:flex-row items-center justify-start md:h-96 min-w-[400px] pb-6 md:pb-0 overflow-auto hide-scroll overscroll-contain">
           {cartItems.length !== 0 ? (
             cartItems.map((item, index) => (
               <CartItem
@@ -29,11 +27,11 @@ const cart = () => {
               />
             ))
           ) : (
-            <div className="self-center md:w-full ml-[-12px] flex flex-col items-center">
-              <h1 className="text-xs">YOU CART IS EMPTY</h1>{" "}
+            <div className="md:self-center md:w-full flex flex-col items-center justify-center">
+              <h1 className="text-xs">YOUR CART IS EMPTY</h1>
               <Link className="cursor-pointer underline" href="/">
                 shop now
-              </Link>{" "}
+              </Link>
             </div>
           )}
         </div>

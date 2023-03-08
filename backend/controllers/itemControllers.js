@@ -7,7 +7,6 @@ const getItem = async (req, res) => {
       { $inc: { views: 1 } }
     );
     const item = await Product.findById(req.params.id);
-    console.log(item);
     if (item) {
       res.json(item);
     } else {
