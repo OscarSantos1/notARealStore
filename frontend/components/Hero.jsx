@@ -20,9 +20,13 @@ const Hero = () => {
           <div className="flex flex-col justify-center items-center font-light bg-gradient-to-r p-1">
             <div className="text-2xl">{"Favorites ❤️‍🔥"}</div>
             <div className="text-sm max-w-md text-center">
-              {
-                "HOTTEST ITEMS RIGHT NOW. GET THEM BEFORE THEY'RE GONE. (NOTAREALSTORE IS A PROTOTIPE FOR A FULLY FUNCTIONAL ONLINE STORE)"
-              }
+              (FAVOURITE ITEMS ARE STATISTICALLY DETERMINED BY HOW MANY TIMES AN
+              ITEM IS PURCHASED OR IT'S PAGE IS VISITED).
+              <span className="font-normal">
+                &nbsp; NOTAREALSTORE IS A PROTOTIPE FOR A FULLY FUNCTIONAL
+                ONLINE CLOTHING STORE THAT'S CURRENTLY{" "}
+                <span className="text-red-600">ON SALE</span>
+              </span>
             </div>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 gap-y-8 md:gap-5 p-5">

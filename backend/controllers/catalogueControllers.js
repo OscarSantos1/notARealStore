@@ -10,7 +10,7 @@ const getCataloge = async (req, res) => {
         type == "tshirts"
           ? "T-Shirts"
           : type.charAt(0).toUpperCase() + type.slice(1),
-      desc: "T-SHIRTS FOR MEN ARE A STYLE BASIC. FROM CLASSIC CUTS TO CONTEMPORARY VERSIONS, THEY COME IN MULTIPLE SHAPES AND SILHOUETTES. LONG-SLEEVED, SHORT-SLEEVED AND SLEEVELESS STYLES ARE ALL OPTIONS",
+      desc: "(THIS PARAGRAPH WOULD CONTAIN A BRIEF DESCRIPTIVE PITCH OF YOU ITEMS, TOUCHING ON THINGS LIKE QUALITY, MATERIALS, PROCEDENCE AND THE VISION BEHIND THEM)",
     });
   } catch {
     res.status(500).send();

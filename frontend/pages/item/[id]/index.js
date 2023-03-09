@@ -99,7 +99,7 @@ const item = ({ item }) => {
               />
               <p>{formatCurrency(item.price / 100)}</p>
               <p onClick={handleClickScroll}>{item.color}</p>
-              <p>Long sleeve round neck sweater. Rib trim.</p>
+              <p>(A BRIEF DESCRIPTION OF YOUR PRODUCT WOULD GO HERE)</p>
               <h3 className="">{item.name}</h3>
             </div>
           </div>
