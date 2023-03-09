@@ -1,13 +1,13 @@
 import axios from "axios";
+import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import { render } from "@react-email/render";
 import {
   CardElement,
   Elements,
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
-import { useState } from "react";
+import { render } from "@react-email/render";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import Email from "../emails/order-confirmation";
 import { useRouter } from "next/router";
@@ -17,7 +17,7 @@ const stripePromise = loadStripe(
 );
 
 const CheckoutForm = () => {
-  const { userName, cartItems, setCartItems } = useShoppingCart();
+  const { userName, setCartItems } = useShoppingCart();
   const [loading, setLoading] = useState(false);
   const APP_API_URL = "http://localhost:5001";
   const stripe = useStripe();
@@ -27,6 +27,8 @@ const CheckoutForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log("card element");
+    console.log(elements.getElement(CardElement));
 
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
@@ -101,7 +103,22 @@ const checkout = () => {
       <div className="flex-col w-screen h-screen pt-48 px-5 md:px-10 backdrop-blur-[13px] bg-white/90">
         {token ? (
           <>
-            <h1 className="mb-20">ENTER YOUR CARD DETAILS</h1>
+            <h1 className="mb-10 text-gray-300">ENTER YOUR CARD DETAILS</h1>
+            <h1 className="text-red-600">
+              DO NOT ENTER YOUR CREDIT CARD INFORMATION SO YOU DON'T GET
+              ACTUALLY CHARGED.
+            </h1>
+            <p className="mb-2 jostfamily">
+              If you wanna try making a payment and getting a confirmation
+              e-mail, use Stripe test credit card:
+            </p>
+            <div className="jostfamily">
+              <p>Number: 4242 4242 4242 4242</p>
+              <p>Expiration date: 11/44</p>
+              <p>CVC: 444</p>
+              <p className="mb-9">ZIP: 44444</p>
+            </div>
+
             <div className="h-72 w-full md:w-1/2 lg:w-1/3 mb-16">
               <CheckoutForm />
             </div>

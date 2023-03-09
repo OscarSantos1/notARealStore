@@ -31,10 +31,10 @@ const FloatingCart = () => {
       <Link
         href="/cart"
         id="floating-cart"
-        className={`fixed flex flex-col justify-center items-center bottom-10 z-10 text-black border-[#ff1249] pb-2 pt-1 ${
+        className={`fixed flex flex-col justify-center items-center bottom-10 text-black border-[#ff1249] pb-2 pt-1 ${
           isOpen
-            ? "w-56 h-96 backdrop-blur-[10px] bg-[rgba(255,16,80,0.2)] rounded-[3rem] px-6 pt-0 bounce-in ease-in-out duration-500"
-            : "w-20 h-10 bg-gradient-to-r from-[#ff1249] to-[#ff0364] rounded-full cursor-pointer"
+            ? "z-50 w-56 h-96 backdrop-blur-[10px] bg-[rgba(255,16,80,0.2)] rounded-[3rem] px-6 pt-0 bounce-in ease-in-out duration-500"
+            : "z-10 w-20 h-10 bg-gradient-to-r from-[#ff1249] to-[#ff0364] rounded-full cursor-pointer"
         } ${
           !isOpen ? " bounce-out ease-in-out duration-500" : ""
         } overflow-clip `}
