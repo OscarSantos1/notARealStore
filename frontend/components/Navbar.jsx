@@ -44,13 +44,16 @@ const Navbar = () => {
   return (
     <div className={`fixed left-0 right-0 top-0 z-20 text-black`}>
       <div className="relative m-auto flex justify-between items-center p-2 pr-5">
-        <div className="absolute flex items-stretch top-[43px] ease-in duration-300 bg-gradient-to-r from-[#ff1064] to-[#ff1741] pb-2 md:pb-4 pl-4 md:pl-6">
-          <Link href="/">
+        <Link
+          className="absolute flex items-stretch top-[43px] ease-in duration-300 bg-gradient-to-r from-[#ff1064] to-[#ff1741] pb-2 md:pb-4 pl-4 md:pl-6"
+          href="/"
+        >
+          <div>
             <h1 className="z-40 ease-in duration-50 text-lg md:text-4xl">
-              DAMN SHOP
+              NOTAREALSTORE
             </h1>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div
           className={
             nav
