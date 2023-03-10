@@ -44,7 +44,7 @@ const CartItem = ({ id, quantity, size }) => {
     <div className="flex h-96 w-80 text-[10px] text-start">
       <div>
         <Link href="/item/[id]" as={`/item/${route}`}>
-          <h2 className="font-bold py-1">{item.name}</h2>
+          <h2 className="font-normal py-1">{item.name}</h2>
         </Link>
         <div className="flex">
           <div>

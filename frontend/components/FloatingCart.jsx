@@ -54,10 +54,10 @@ const FloatingCart = () => {
             <div className="rounded-3xl overflow-hidden h-60">
               <img src={`http://localhost:5001${lastAdded.image}`} />
             </div>
-            <div className="font-bold mt-3">{lastAdded.name}</div>
+            <div className="font-normal mt-3">{lastAdded.name}</div>
             <div className="overflow-hidden mt-1">
               SIZE <span>{lastAdded.size}</span>{" "}
-              <span className="font-bold">ADDED</span> TO YOUR CART
+              <span className="font-normal">ADDED</span> TO YOUR CART
             </div>
           </div>
         )}

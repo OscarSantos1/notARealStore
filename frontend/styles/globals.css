@@ -43,17 +43,27 @@ h1 {
 /* ANIMATIONS */
 
 .bounce-in {
-  animation: bounce-in 1s ease 1;
+  animation: bounce-in 2.5s ease 1;
 }
 @keyframes bounce-in {
   0% {
     transform: translateY(0);
     border-radius: 9999px;
   }
-  20% {
+  5% {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-80px);
     border-radius: 6rem;
+  }
+  35% {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 3rem;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 3rem;
   }
   100% {
     opacity: 1;
@@ -66,6 +76,30 @@ h1 {
   animation: bounce-out 1s ease 1;
 }
 @keyframes bounce-out {
+  0% {
+    transform: translateY(0);
+    border-radius: 3rem;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+    border-radius: 6rem;
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 9999px;
+  }
+}
+
+.bounce-click {
+  animation: bounce-click 1400ms ease 1;
+}
+@keyframes bounce-click {
   0% {
     transform: translateY(0);
     border-radius: 3rem;

@@ -100,7 +100,7 @@ const Navbar = () => {
             <div
               className={
                 selected == "man-tshirts" && width <= 767
-                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  ? "bounce-click cursor-pointer inline-block p-[5px] hover:underline"
                   : "cursor-pointer inline-block p-[5px] hover:underline"
               }
             >
@@ -115,7 +115,7 @@ const Navbar = () => {
             <div
               className={
                 selected == "man-jackets" && width <= 767
-                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  ? "bounce-click cursor-pointer inline-block p-[5px] hover:underline"
                   : "cursor-pointer inline-block p-[5px] hover:underline"
               }
             >
@@ -130,7 +130,7 @@ const Navbar = () => {
             <div
               className={
                 selected == "man-shoes" && width <= 767
-                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  ? "bounce-click cursor-pointer inline-block p-[5px] hover:underline"
                   : "cursor-pointer inline-block p-[5px] hover:underline"
               }
             >
@@ -145,7 +145,7 @@ const Navbar = () => {
             <div
               className={
                 selected == "man-accessories" && width <= 767
-                  ? "bounce-in cursor-pointer inline-block p-[5px] hover:underline"
+                  ? "bounce-click cursor-pointer inline-block p-[5px] hover:underline"
                   : "cursor-pointer inline-block p-[5px] hover:underline"
               }
             >
