@@ -11,6 +11,16 @@ const item = ({ item }) => {
   const [zoom, setZoom] = useState(false);
   const [zoomedImg, setZoomedImg] = useState();
 
+  const handleAdd = () => {
+    if (selected) {
+      increaseItemQuantity(item._id, item.mainImg, size, item.name);
+      setSelected((currVal) => !currVal);
+      setSize("");
+    } else {
+      alert("Must select size.");
+    }
+  };
+
   const handleSelect = (value) => {
     setSize(value);
     setSelected(!selected);
@@ -77,16 +87,7 @@ const item = ({ item }) => {
           <div className="fixed bottom-0 w-screen px-6 mx-auto md:static bg-white md:flex-[0.7] flex flex-col md:justify-end font-light">
             <div className="flex flex-col-reverse gap-2 justify-start md:gap-4 md:min-w-[300px] md:h-1/2 lg:pr-14 mt-3 md:mt-14">
               <button
-                onClick={() =>
-                  selected
-                    ? increaseItemQuantity(
-                        item._id,
-                        item.mainImg,
-                        size,
-                        item.name
-                      )
-                    : alert("Must select size.")
-                }
+                onClick={handleAdd}
                 className="bg-black text-white mx-[-24px] md:mx-0 text-sm pt-[10px] pb-[8px] md:pt-3 md:pb-2 mt-10 md:mt-0"
               >
                 ADD TO CART

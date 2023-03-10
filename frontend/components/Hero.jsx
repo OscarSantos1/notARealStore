@@ -14,13 +14,13 @@ const Hero = () => {
     getFav();
   }, []);
   return (
-    <div className="mb-12 bg-white">
+    <div className="w-screen mb-12 bg-white">
       <div>
-        <div className="mx-auto pt-24">
+        <div className="pt-24">
           <div className="flex flex-col justify-center items-center font-light bg-gradient-to-r p-1">
             <div className="text-2xl">{"Favorites ❤️‍🔥"}</div>
             <div className="text-sm max-w-md text-center">
-              (FAVOURITE ITEMS ARE STATISTICALLY DETERMINED BY HOW MANY TIMES AN
+              (FAVORITE ITEMS ARE STATISTICALLY DETERMINED BY HOW MANY TIMES AN
               ITEM IS PURCHASED OR IT'S PAGE IS VISITED).
               <span className="font-normal">
                 &nbsp; NOTAREALSTORE IS A PROTOTIPE FOR A FULLY FUNCTIONAL

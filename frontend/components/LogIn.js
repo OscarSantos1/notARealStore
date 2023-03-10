@@ -51,7 +51,7 @@ const LogIn = ({
     setEmail("");
     setPass("");
     setConfirm("");
-    // alert(msg);
+    alert(msg);
     closeLogin();
     return;
   };

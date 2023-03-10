@@ -4,8 +4,8 @@ import ItemCard from "./ItemCard";
 const ItemLayout = ({ items, title, desc }) => {
   useEffect(() => {});
   return (
-    <div className="z-10 mx-auto text-center py-24 bg-white">
-      <div className="flex flex-col justify-center items-center font-light bg-white/80  p-1">
+    <div className="w-screen z-10 text-center py-24 bg-white">
+      <div className="flex flex-col justify-center items-center font-light bg-white  p-1">
         <div className="text-2xl">{title}</div>
         <div className="text-xs md:text-sm max-w-md">{desc}</div>
       </div>

@@ -110,7 +110,7 @@ const checkout = () => {
             </h1>
             <p className="mb-2 jostfamily">
               If you wanna try making a payment and getting a confirmation
-              e-mail, use Stripe test credit card:
+              e-mail, use the following test credit card info:
             </p>
             <div className="jostfamily">
               <p>Number: 4242 4242 4242 4242</p>
