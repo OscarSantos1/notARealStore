@@ -1,95 +1,274 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/item/[id]";
-exports.ids = ["pages/item/[id]"];
+exports.id = 591;
+exports.ids = [591];
 exports.modules = {
 
-/***/ "./components/SizeSelector.jsx":
-/*!*************************************!*\
-  !*** ./components/SizeSelector.jsx ***!
-  \*************************************/
+/***/ 3000:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nconst SizeSelector = ({ selected , type , size , handleSelect  })=>{\n    const sizes = {\n        tshirts: [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        jackets: [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        shoes: [\n            \"6\",\n            \"7\",\n            \"8\",\n            \"9\",\n            \"10\",\n            \"11\",\n            \"12\",\n            \"13\"\n        ],\n        accessories: [\n            \"M\",\n            \"L\"\n        ]\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: `flex md:flex-col justify-center space-y-0 ${selected && \"font-bold\"}`,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"hr\", {\n                className: \"hidden md:inline\"\n            }, void 0, false, {\n                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/components/SizeSelector.jsx\",\n                lineNumber: 15,\n                columnNumber: 7\n            }, undefined),\n            sizes[type].map((s, index)=>!selected || size === s ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: `cursor-pointer px-10 md:px-0 pt-[1px] hover:bg-gray-100 ${selected && \"bg-black text-white md:hover:bg-gray-100 hover:bg-gray-700 md:bg-white md:text-black\"}`,\n                    onClick: ()=>handleSelect(s),\n                    children: s\n                }, index, false, {\n                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/components/SizeSelector.jsx\",\n                    lineNumber: 19,\n                    columnNumber: 11\n                }, undefined) : \"\"),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"hr\", {\n                className: \"hidden md:inline\"\n            }, void 0, false, {\n                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/components/SizeSelector.jsx\",\n                lineNumber: 33,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/components/SizeSelector.jsx\",\n        lineNumber: 10,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SizeSelector);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1NpemVTZWxlY3Rvci5qc3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7QUFBQSxNQUFNQSxlQUFlLENBQUMsRUFBRUMsU0FBUSxFQUFFQyxLQUFJLEVBQUVDLEtBQUksRUFBRUMsYUFBWSxFQUFFLEdBQUs7SUFDL0QsTUFBTUMsUUFBUTtRQUNaQyxTQUFTO1lBQUM7WUFBSztZQUFLO1lBQUs7U0FBSztRQUM5QkMsU0FBUztZQUFDO1lBQUs7WUFBSztZQUFLO1NBQUs7UUFDOUJDLE9BQU87WUFBQztZQUFLO1lBQUs7WUFBSztZQUFLO1lBQU07WUFBTTtZQUFNO1NBQUs7UUFDbkRDLGFBQWE7WUFBQztZQUFLO1NBQUk7SUFDekI7SUFFQSxxQkFDRSw4REFBQ0M7UUFDQ0MsV0FBVyxDQUFDLDBDQUEwQyxFQUNwRFYsWUFBWSxZQUNiLENBQUM7OzBCQUVGLDhEQUFDVztnQkFBR0QsV0FBVTs7Ozs7O1lBRWJOLEtBQUssQ0FBQ0gsS0FBSyxDQUFDVyxHQUFHLENBQUMsQ0FBQ0MsR0FBR0MsUUFDbkIsQ0FBQ2QsWUFBWUUsU0FBU1csa0JBQ3BCLDhEQUFDSjtvQkFFQ0MsV0FBVyxDQUFDLHdEQUF3RCxFQUNsRVYsWUFDQSx1RkFDRCxDQUFDO29CQUNGZSxTQUFTLElBQU1aLGFBQWFVOzhCQUUzQkE7bUJBUElDOzs7O2dDQVVQLEVBQ0Q7MEJBRUgsOERBQUNIO2dCQUFHRCxXQUFVOzs7Ozs7Ozs7Ozs7QUFHcEI7QUFFQSxpRUFBZVgsWUFBWUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Zyb250ZW5kLy4vY29tcG9uZW50cy9TaXplU2VsZWN0b3IuanN4P2Y0YjMiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgU2l6ZVNlbGVjdG9yID0gKHsgc2VsZWN0ZWQsIHR5cGUsIHNpemUsIGhhbmRsZVNlbGVjdCB9KSA9PiB7XG4gIGNvbnN0IHNpemVzID0ge1xuICAgIHRzaGlydHM6IFtcIlNcIiwgXCJNXCIsIFwiTFwiLCBcIlhMXCJdLFxuICAgIGphY2tldHM6IFtcIlNcIiwgXCJNXCIsIFwiTFwiLCBcIlhMXCJdLFxuICAgIHNob2VzOiBbXCI2XCIsIFwiN1wiLCBcIjhcIiwgXCI5XCIsIFwiMTBcIiwgXCIxMVwiLCBcIjEyXCIsIFwiMTNcIl0sXG4gICAgYWNjZXNzb3JpZXM6IFtcIk1cIiwgXCJMXCJdLFxuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPGRpdlxuICAgICAgY2xhc3NOYW1lPXtgZmxleCBtZDpmbGV4LWNvbCBqdXN0aWZ5LWNlbnRlciBzcGFjZS15LTAgJHtcbiAgICAgICAgc2VsZWN0ZWQgJiYgXCJmb250LWJvbGRcIlxuICAgICAgfWB9XG4gICAgPlxuICAgICAgPGhyIGNsYXNzTmFtZT1cImhpZGRlbiBtZDppbmxpbmVcIiAvPlxuXG4gICAgICB7c2l6ZXNbdHlwZV0ubWFwKChzLCBpbmRleCkgPT5cbiAgICAgICAgIXNlbGVjdGVkIHx8IHNpemUgPT09IHMgPyAoXG4gICAgICAgICAgPGRpdlxuICAgICAgICAgICAga2V5PXtpbmRleH1cbiAgICAgICAgICAgIGNsYXNzTmFtZT17YGN1cnNvci1wb2ludGVyIHB4LTEwIG1kOnB4LTAgcHQtWzFweF0gaG92ZXI6YmctZ3JheS0xMDAgJHtcbiAgICAgICAgICAgICAgc2VsZWN0ZWQgJiZcbiAgICAgICAgICAgICAgXCJiZy1ibGFjayB0ZXh0LXdoaXRlIG1kOmhvdmVyOmJnLWdyYXktMTAwIGhvdmVyOmJnLWdyYXktNzAwIG1kOmJnLXdoaXRlIG1kOnRleHQtYmxhY2tcIlxuICAgICAgICAgICAgfWB9XG4gICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBoYW5kbGVTZWxlY3Qocyl9XG4gICAgICAgICAgPlxuICAgICAgICAgICAge3N9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICkgOiAoXG4gICAgICAgICAgXCJcIlxuICAgICAgICApXG4gICAgICApfVxuICAgICAgPGhyIGNsYXNzTmFtZT1cImhpZGRlbiBtZDppbmxpbmVcIiAvPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgU2l6ZVNlbGVjdG9yO1xuIl0sIm5hbWVzIjpbIlNpemVTZWxlY3RvciIsInNlbGVjdGVkIiwidHlwZSIsInNpemUiLCJoYW5kbGVTZWxlY3QiLCJzaXplcyIsInRzaGlydHMiLCJqYWNrZXRzIiwic2hvZXMiLCJhY2Nlc3NvcmllcyIsImRpdiIsImNsYXNzTmFtZSIsImhyIiwibWFwIiwicyIsImluZGV4Iiwib25DbGljayJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/SizeSelector.jsx\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _id_),
+  "getServerSideProps": () => (/* binding */ getServerSideProps)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(968);
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: ./components/SizeSelector.jsx
+
+const SizeSelector = ({ selected , type , size , handleSelect  })=>{
+    const sizes = {
+        tshirts: [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        jackets: [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        shoes: [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        accessories: [
+            "M",
+            "L"
+        ]
+    };
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        className: `flex md:flex-col justify-center space-y-0 ${selected && "font-bold"}`,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("hr", {
+                className: "hidden md:inline"
+            }),
+            sizes[type].map((s, index)=>!selected || size === s ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: `cursor-pointer px-10 md:px-0 pt-[1px] hover:bg-gray-100 ${selected && "bg-black text-white md:hover:bg-gray-100 hover:bg-gray-700 md:bg-white md:text-black"}`,
+                    onClick: ()=>handleSelect(s),
+                    children: s
+                }, index) : ""),
+            /*#__PURE__*/ jsx_runtime_.jsx("hr", {
+                className: "hidden md:inline"
+            })
+        ]
+    });
+};
+/* harmony default export */ const components_SizeSelector = (SizeSelector);
+
+// EXTERNAL MODULE: ./context/ShoppingCartContext.js + 1 modules
+var ShoppingCartContext = __webpack_require__(342);
+// EXTERNAL MODULE: ./utilities/formatCurrency.js
+var formatCurrency = __webpack_require__(139);
+;// CONCATENATED MODULE: ./pages/item/[id]/index.js
+
+
+
+
+
+
+const item = ({ item  })=>{
+    const { increaseItemQuantity  } = (0,ShoppingCartContext/* useShoppingCart */.g)();
+    const [size, setSize] = (0,external_react_.useState)();
+    const [selected, setSelected] = (0,external_react_.useState)(false);
+    const [zoom, setZoom] = (0,external_react_.useState)(false);
+    const [zoomedImg, setZoomedImg] = (0,external_react_.useState)();
+    const handleAdd = ()=>{
+        if (selected) {
+            increaseItemQuantity(item._id, item.mainImg, size, item.name);
+            setSelected((currVal)=>!currVal);
+            setSize("");
+        } else {
+            alert("Must select size.");
+        }
+    };
+    const handleSelect = (value)=>{
+        setSize(value);
+        setSelected(!selected);
+    };
+    const handleZoom = (image)=>{
+        setZoomedImg(image);
+        setZoom(!zoom);
+    };
+    const viewerScroll = ()=>{
+        const element = document.getElementById("viewer");
+        if (element) {
+            element.scrollTo(0, 600);
+        }
+    };
+    const handleClickScroll = (section)=>{
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx((head_default()), {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                    children: `${item.name} - ${item.color} | NotARealStore`
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "static md:relative h-screen w-screen bg-white",
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: "static md:relative flex flex-col md:flex-row md:items-end md:min-h-[550px] h-screen w-screen md:pb-8",
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "flex-1 flex md:items-end md:justify-end md:h-full min-w-max md:pl-2 md:p-0 md:pt-11 md:pr-[16px] lg:pr-[90px]",
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: "block static md:relative h-screen w-screen md:h-full md:w-auto ",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            id: "imageNav",
+                                            className: "h-[90%] w-screen md:h-full md:w-auto overflow-auto hide-scroll",
+                                            children: item.images.map((image, index)=>/*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    className: "cursor-pointer w-screen md:h-full md:w-auto",
+                                                    onClick: ()=>handleZoom(image),
+                                                    id: `${index}`,
+                                                    src: `http://localhost:5001${image}`,
+                                                    alt: "/",
+                                                    layout: "responsive"
+                                                }, index))
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "hidden md:flex absolute flex-col space-y-1 top-0 right-[-30px]",
+                                            children: item.images.map((image, index)=>/*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    onClick: ()=>handleClickScroll(index),
+                                                    src: `http://localhost:5001${image}`,
+                                                    alt: "/",
+                                                    className: "cursor-pointer h-[39px] w-[26px]",
+                                                    layout: "responsive"
+                                                }, index))
+                                        })
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "fixed bottom-0 w-screen px-6 mx-auto md:static bg-white md:flex-[0.7] flex flex-col md:justify-end font-light",
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: "flex flex-col-reverse gap-2 justify-start md:gap-4 md:min-w-[300px] md:h-1/2 lg:pr-14 mt-3 md:mt-14",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                            onClick: handleAdd,
+                                            className: "bg-black text-white mx-[-24px] md:mx-0 text-sm pt-[10px] pb-[8px] md:pt-3 md:pb-2 mt-10 md:mt-0",
+                                            children: "ADD TO CART"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(components_SizeSelector, {
+                                            selected: selected,
+                                            type: item.type,
+                                            size: size,
+                                            handleSelect: handleSelect
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            children: (0,formatCurrency/* default */.Z)(item.price / 100)
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            onClick: handleClickScroll,
+                                            children: item.color
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            children: "(A BRIEF DESCRIPTION OF YOUR PRODUCT WOULD GO HERE)"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                            className: "",
+                                            children: item.name
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    }),
+                    zoom && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        onLoad: viewerScroll,
+                        id: "viewer",
+                        className: "absolute z-50 top-0 left-0 h-screen w-screen bg-white overflow-scroll overscroll-contain",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            onClick: ()=>handleZoom(""),
+                            src: `http://localhost:5001${zoomedImg}`,
+                            alt: "/",
+                            className: "cursor-zoom-out w-full",
+                            layout: "responsive"
+                        })
+                    })
+                ]
+            })
+        ]
+    });
+};
+const getServerSideProps = async (context)=>{
+    const itemId = context.params.id.split("-p");
+    const id = itemId[itemId.length - 1];
+    const responce = await fetch(`http://localhost:5001/api/item/${id}`);
+    const item = await responce.json();
+    return {
+        props: {
+            item
+        }
+    };
+};
+/* harmony default export */ const _id_ = (item);
+
 
 /***/ }),
 
-/***/ "./context/ShoppingCartContext.js":
-/*!****************************************!*\
-  !*** ./context/ShoppingCartContext.js ***!
-  \****************************************/
+/***/ 139:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ShoppingCartProvider\": () => (/* binding */ ShoppingCartProvider),\n/* harmony export */   \"useShoppingCart\": () => (/* binding */ useShoppingCart)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _hooks_useLocalStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useLocalStorage */ \"./hooks/useLocalStorage.js\");\n\n\n\nconst ShoppingCartContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)({});\nfunction useShoppingCart() {\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(ShoppingCartContext);\n}\nfunction ShoppingCartProvider({ children  }) {\n    const [cartItems, setCartItems] = (0,_hooks_useLocalStorage__WEBPACK_IMPORTED_MODULE_2__.useLocalStorage)(\"shopping-cart\", []);\n    const [token, setToken] = (0,_hooks_useLocalStorage__WEBPACK_IMPORTED_MODULE_2__.useLocalStorage)(\"jwt-token\", \"\");\n    const [userName, setUserName] = (0,_hooks_useLocalStorage__WEBPACK_IMPORTED_MODULE_2__.useLocalStorage)(\"user-name\", \"\");\n    const [lastAdded, setLastAdded] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();\n    const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const [fastClose, setFastClose] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const cartQuantity = cartItems.reduce((quantity, item)=>item.quantity + quantity, 0);\n    const [timeOut, setTimeOut] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();\n    const openCart = ()=>setIsOpen(true);\n    const closeCart = ()=>setIsOpen(false);\n    const getItemQuantity = (id)=>{\n        return cartItems.find((item)=>item.id === id)?.quantity || 0;\n    };\n    const increaseItemQuantity = (id, image, size, name)=>{\n        setCartItems((currItems)=>{\n            if (currItems.find((item)=>item.id === id && item.size === size) == null) {\n                return [\n                    ...currItems,\n                    {\n                        id,\n                        quantity: 1,\n                        size\n                    }\n                ];\n            } else {\n                return currItems.map((item)=>{\n                    if (item.id === id && item.size === size) {\n                        return {\n                            ...item,\n                            quantity: item.quantity + 1\n                        };\n                    } else {\n                        return item;\n                    }\n                });\n            }\n        });\n        setLastAdded({\n            name,\n            image,\n            size\n        });\n        setFastClose(false);\n        setIsOpen(true);\n        setTimeOut(setTimeout(()=>setIsOpen(false), 2500));\n    };\n    const decreaseItemQuantity = (id, size)=>{\n        setCartItems((currItems)=>{\n            if (currItems.find((item)=>item.id === id && item.size === size)?.quantity === 1) {\n                return currItems.filter((item)=>item.id !== id || item.size !== size);\n            } else {\n                return currItems.map((item)=>{\n                    if (item.id === id && item.size === size) {\n                        return {\n                            ...item,\n                            quantity: item.quantity - 1\n                        };\n                    } else {\n                        return item;\n                    }\n                });\n            }\n        });\n    };\n    const removeFromCart = (id, size)=>{\n        setCartItems((currItems)=>{\n            return currItems.filter((item)=>item.id !== id || item.size !== size);\n        });\n    };\n    const stopClose = ()=>{\n        setTimeOut((currTimeOut)=>clearTimeout(currTimeOut));\n    };\n    const startClose = ()=>{\n        setTimeOut(setTimeout(()=>setIsOpen(false), 2500));\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(ShoppingCartContext.Provider, {\n        value: {\n            getItemQuantity,\n            increaseItemQuantity,\n            decreaseItemQuantity,\n            removeFromCart,\n            openCart,\n            closeCart,\n            cartItems,\n            setCartItems,\n            cartQuantity,\n            isOpen,\n            lastAdded,\n            timeOut,\n            stopClose,\n            startClose,\n            fastClose,\n            setFastClose,\n            token,\n            setToken,\n            userName,\n            setUserName\n        },\n        children: children\n    }, void 0, false, {\n        fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/context/ShoppingCartContext.js\",\n        lineNumber: 73,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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USxHQUFHO3dCQUFFO29CQUNoRCxPQUFPO3dCQUNMLE9BQU9DO29CQUNULENBQUM7Z0JBQ0g7WUFDRixDQUFDO1FBQ0g7SUFDRjtJQUNBLE1BQU1pQixpQkFBaUIsQ0FBQ1gsSUFBSUksT0FBUztRQUNuQ3hCLGFBQWEwQixDQUFBQSxZQUFhO1lBQ3hCLE9BQU9BLFVBQVVJLE1BQU0sQ0FBQ2hCLENBQUFBLE9BQVFBLEtBQUtNLEVBQUUsS0FBS0EsTUFBTU4sS0FBS1UsSUFBSSxLQUFLQTtRQUNsRTtJQUNGO0lBQ0EsTUFBTVEsWUFBWSxJQUFNO1FBQ3RCaEIsV0FBVyxDQUFDaUIsY0FBZ0JDLGFBQWFEO0lBQzNDO0lBQ0EsTUFBTUUsYUFBYSxJQUFNO1FBQ3ZCbkIsV0FBV1ksV0FBVyxJQUFNcEIsVUFBVSxLQUFLLEdBQUc7SUFDaEQ7SUFFQSxxQkFDRSw4REFBQ2Isb0JBQW9CeUMsUUFBUTtRQUFDQyxPQUFPO1lBQUVsQjtZQUFpQkc7WUFBc0JPO1lBQXNCRTtZQUFnQmQ7WUFBVUM7WUFBV25CO1lBQVdDO1lBQWNXO1lBQWNKO1lBQVFGO1lBQVdVO1lBQVNpQjtZQUFXRztZQUFZMUI7WUFBV0M7WUFBY1Q7WUFBT0M7WUFBVUM7WUFBVUM7UUFBWTtrQkFDaFNOOzs7Ozs7QUFJUCxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZnJvbnRlbmQvLi9jb250ZXh0L1Nob3BwaW5nQ2FydENvbnRleHQuanM/NTY4ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjcmVhdGVDb250ZXh0LCB1c2VDb250ZXh0LCB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiXG5pbXBvcnQgeyB1c2VMb2NhbFN0b3JhZ2UgfSBmcm9tIFwiLi4vaG9va3MvdXNlTG9jYWxTdG9yYWdlXCJcblxuY29uc3QgU2hvcHBpbmdDYXJ0Q29udGV4dCA9IGNyZWF0ZUNvbnRleHQoe30pXG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VTaG9wcGluZ0NhcnQoKSB7XG4gIHJldHVybiB1c2VDb250ZXh0KFNob3BwaW5nQ2FydENvbnRleHQpXG59XG5cbmV4cG9ydCBmdW5jdGlvbiBTaG9wcGluZ0NhcnRQcm92aWRlcih7IGNoaWxkcmVuIH0pIHtcbiAgY29uc3QgW2NhcnRJdGVtcywgc2V0Q2FydEl0ZW1zXSA9IHVzZUxvY2FsU3RvcmFnZSgnc2hvcHBpbmctY2FydCcsIFtdKVxuICBjb25zdCBbdG9rZW4sIHNldFRva2VuXSA9IHVzZUxvY2FsU3RvcmFnZSgnand0LXRva2VuJywgJycpXG4gIGNvbnN0IFt1c2VyTmFtZSwgc2V0VXNlck5hbWVdID0gdXNlTG9jYWxTdG9yYWdlKCd1c2VyLW5hbWUnLCAnJylcbiAgY29uc3QgW2xhc3RBZGRlZCwgc2V0TGFzdEFkZGVkXSA9IHVzZVN0YXRlKClcbiAgY29uc3QgW2lzT3Blbiwgc2V0SXNPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKVxuICBjb25zdCBbZmFzdENsb3NlLCBzZXRGYXN0Q2xvc2VdID0gdXNlU3RhdGUoZmFsc2UpXG4gIGNvbnN0IGNhcnRRdWFudGl0eSA9IGNhcnRJdGVtcy5yZWR1Y2UoKHF1YW50aXR5LCBpdGVtKSA9PiBpdGVtLnF1YW50aXR5ICsgcXVhbnRpdHksIDApXG4gIGNvbnN0IFt0aW1lT3V0LCBzZXRUaW1lT3V0XSA9IHVzZVN0YXRlKClcblxuICBjb25zdCBvcGVuQ2FydCA9ICgpID0+IHNldElzT3Blbih0cnVlKVxuICBjb25zdCBjbG9zZUNhcnQgPSAoKSA9PiBzZXRJc09wZW4oZmFsc2UpXG5cbiAgY29uc3QgZ2V0SXRlbVF1YW50aXR5ID0gKGlkKSA9PiB7XG4gICAgcmV0dXJuIGNhcnRJdGVtcy5maW5kKGl0ZW0gPT4gaXRlbS5pZCA9PT0gaWQpPy5xdWFudGl0eSB8fCAwXG4gIH1cbiAgY29uc3QgaW5jcmVhc2VJdGVtUXVhbnRpdHkgPSAoaWQsIGltYWdlLCBzaXplLCBuYW1lKSA9PiB7XG4gICAgc2V0Q2FydEl0ZW1zKGN1cnJJdGVtcyA9PiB7XG4gICAgICBpZiAoY3Vyckl0ZW1zLmZpbmQoaXRlbSA9PiBpdGVtLmlkID09PSBpZCAmJiBpdGVtLnNpemUgPT09IHNpemUpID09IG51bGwpIHtcbiAgICAgICAgcmV0dXJuIFsuLi5jdXJySXRlbXMsIHsgaWQsIHF1YW50aXR5OiAxLCBzaXplIH1dXG4gICAgICB9IGVsc2Uge1xuICAgICAgICByZXR1cm4gY3Vyckl0ZW1zLm1hcChpdGVtID0+IHtcbiAgICAgICAgICBpZiAoaXRlbS5pZCA9PT0gaWQgJiYgaXRlbS5zaXplID09PSBzaXplKSB7XG4gICAgICAgICAgICByZXR1cm4geyAuLi5pdGVtLCBxdWFudGl0eTogaXRlbS5xdWFudGl0eSArIDEgfVxuICAgICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICByZXR1cm4gaXRlbVxuICAgICAgICAgIH1cbiAgICAgICAgfSlcbiAgICAgIH1cbiAgICB9KVxuICAgIHNldExhc3RBZGRlZCh7IG5hbWUsIGltYWdlLCBzaXplIH0pXG4gICAgc2V0RmFzdENsb3NlKGZhbHNlKVxuICAgIHNldElzT3Blbih0cnVlKVxuICAgIHNldFRpbWVPdXQoc2V0VGltZW91dCgoKSA9PiBzZXRJc09wZW4oZmFsc2UpLCAyNTAwKSlcbiAgfVxuICBjb25zdCBkZWNyZWFzZUl0ZW1RdWFudGl0eSA9IChpZCwgc2l6ZSkgPT4ge1xuICAgIHNldENhcnRJdGVtcyhjdXJySXRlbXMgPT4ge1xuICAgICAgaWYgKGN1cnJJdGVtcy5maW5kKGl0ZW0gPT4gaXRlbS5pZCA9PT0gaWQgJiYgaXRlbS5zaXplID09PSBzaXplKT8ucXVhbnRpdHkgPT09IDEpIHtcbiAgICAgICAgcmV0dXJuIGN1cnJJdGVtcy5maWx0ZXIoaXRlbSA9PiBpdGVtLmlkICE9PSBpZCB8fCBpdGVtLnNpemUgIT09IHNpemUpXG4gICAgICB9IGVsc2Uge1xuICAgICAgICByZXR1cm4gY3Vyckl0ZW1zLm1hcChpdGVtID0+IHtcbiAgICAgICAgICBpZiAoaXRlbS5pZCA9PT0gaWQgJiYgaXRlbS5zaXplID09PSBzaXplKSB7XG4gICAgICAgICAgICByZXR1cm4geyAuLi5pdGVtLCBxdWFudGl0eTogaXRlbS5xdWFudGl0eSAtIDEgfVxuICAgICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICByZXR1cm4gaXRlbVxuICAgICAgICAgIH1cbiAgICAgICAgfSlcbiAgICAgIH1cbiAgICB9KVxuICB9XG4gIGNvbnN0IHJlbW92ZUZyb21DYXJ0ID0gKGlkLCBzaXplKSA9PiB7XG4gICAgc2V0Q2FydEl0ZW1zKGN1cnJJdGVtcyA9PiB7XG4gICAgICByZXR1cm4gY3Vyckl0ZW1zLmZpbHRlcihpdGVtID0+IGl0ZW0uaWQgIT09IGlkIHx8IGl0ZW0uc2l6ZSAhPT0gc2l6ZSlcbiAgICB9KVxuICB9XG4gIGNvbnN0IHN0b3BDbG9zZSA9ICgpID0+IHtcbiAgICBzZXRUaW1lT3V0KChjdXJyVGltZU91dCkgPT4gY2xlYXJUaW1lb3V0KGN1cnJUaW1lT3V0KSlcbiAgfVxuICBjb25zdCBzdGFydENsb3NlID0gKCkgPT4ge1xuICAgIHNldFRpbWVPdXQoc2V0VGltZW91dCgoKSA9PiBzZXRJc09wZW4oZmFsc2UpLCAyNTAwKSlcbiAgfVxuXG4gIHJldHVybiAoXG4gICAgPFNob3BwaW5nQ2FydENvbnRleHQuUHJvdmlkZXIgdmFsdWU9e3sgZ2V0SXRlbVF1YW50aXR5LCBpbmNyZWFzZUl0ZW1RdWFudGl0eSwgZGVjcmVhc2VJdGVtUXVhbnRpdHksIHJlbW92ZUZyb21DYXJ0LCBvcGVuQ2FydCwgY2xvc2VDYXJ0LCBjYXJ0SXRlbXMsIHNldENhcnRJdGVtcywgY2FydFF1YW50aXR5LCBpc09wZW4sIGxhc3RBZGRlZCwgdGltZU91dCwgc3RvcENsb3NlLCBzdGFydENsb3NlLCBmYXN0Q2xvc2UsIHNldEZhc3RDbG9zZSwgdG9rZW4sIHNldFRva2VuLCB1c2VyTmFtZSwgc2V0VXNlck5hbWUgfX0+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9TaG9wcGluZ0NhcnRDb250ZXh0LlByb3ZpZGVyPlxuICApXG5cbn0iXSwibmFtZXMiOlsiY3JlYXRlQ29udGV4dCIsInVzZUNvbnRleHQiLCJ1c2VTdGF0ZSIsInVzZUxvY2FsU3RvcmFnZSIsIlNob3BwaW5nQ2FydENvbnRleHQiLCJ1c2VTaG9wcGluZ0NhcnQiLCJTaG9wcGluZ0NhcnRQcm92aWRlciIsImNoaWxkcmVuIiwiY2FydEl0ZW1zIiwic2V0Q2FydEl0ZW1zIiwidG9rZW4iLCJzZXRUb2tlbiIsInVzZXJOYW1lIiwic2V0VXNlck5hbWUiLCJsYXN0QWRkZWQiLCJzZXRMYXN0QWRkZWQiLCJpc09wZW4iLCJzZXRJc09wZW4iLCJmYXN0Q2xvc2UiLCJzZXRGYXN0Q2xvc2UiLCJjYXJ0UXVhbnRpdHkiLCJyZWR1Y2UiLCJxdWFudGl0eSIsIml0ZW0iLCJ0aW1lT3V0Iiwic2V0VGltZU91dCIsIm9wZW5DYXJ0IiwiY2xvc2VDYXJ0IiwiZ2V0SXRlbVF1YW50aXR5IiwiaWQiLCJmaW5kIiwiaW5jcmVhc2VJdGVtUXVhbnRpdHkiLCJpbWFnZSIsInNpemUiLCJuYW1lIiwiY3Vyckl0ZW1zIiwibWFwIiwic2V0VGltZW91dCIsImRlY3JlYXNlSXRlbVF1YW50aXR5IiwiZmlsdGVyIiwicmVtb3ZlRnJvbUNhcnQiLCJzdG9wQ2xvc2UiLCJjdXJyVGltZU91dCIsImNsZWFyVGltZW91dCIsInN0YXJ0Q2xvc2UiLCJQcm92aWRlciIsInZhbHVlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./context/ShoppingCartContext.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
+    currency: "USD",
+    style: "currency"
+});
+const formatCurrency = (number)=>{
+    return CURRENCY_FORMATTER.format(number);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (formatCurrency);
+
 
 /***/ }),
 
-/***/ "./hooks/useLocalStorage.js":
-/*!**********************************!*\
-  !*** ./hooks/useLocalStorage.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"useLocalStorage\": () => (/* binding */ useLocalStorage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction useLocalStorage(key, initialValue) {\n    const [value, setValue] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialValue);\n    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{\n        const jsonValue = localStorage.getItem(key);\n        setValue(typeof jsonValue == \"undefined\" ? initialValue : JSON.parse(jsonValue));\n    }, [\n        key\n    ]);\n    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{\n        setValue((currValue)=>{\n            localStorage.setItem(key, JSON.stringify(currValue));\n            return currValue;\n        });\n    }, [\n        key,\n        value\n    ]);\n    return [\n        value,\n        setValue\n    ];\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ob29rcy91c2VMb2NhbFN0b3JhZ2UuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQTRDO0FBRXJDLFNBQVNFLGdCQUFnQkMsR0FBRyxFQUFFQyxZQUFZLEVBQUU7SUFDakQsTUFBTSxDQUFDQyxPQUFPQyxTQUFTLEdBQUdMLCtDQUFRQSxDQUFDRztJQUNuQ0osZ0RBQVNBLENBQUMsSUFBTTtRQUNkLE1BQU1PLFlBQVlDLGFBQWFDLE9BQU8sQ0FBQ047UUFDdkNHLFNBQ0UsT0FBT0MsYUFBYSxjQUFjSCxlQUFlTSxLQUFLQyxLQUFLLENBQUNKLFVBQVU7SUFFMUUsR0FBRztRQUFDSjtLQUFJO0lBRVJILGdEQUFTQSxDQUFDLElBQU07UUFDZE0sU0FBUyxDQUFDTSxZQUFjO1lBQ3RCSixhQUFhSyxPQUFPLENBQUNWLEtBQUtPLEtBQUtJLFNBQVMsQ0FBQ0Y7WUFDekMsT0FBT0E7UUFDVDtJQUNGLEdBQUc7UUFBQ1Q7UUFBS0U7S0FBTTtJQUVmLE9BQU87UUFBQ0E7UUFBT0M7S0FBUztBQUMxQixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZnJvbnRlbmQvLi9ob29rcy91c2VMb2NhbFN0b3JhZ2UuanM/MzNkYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VMb2NhbFN0b3JhZ2Uoa2V5LCBpbml0aWFsVmFsdWUpIHtcbiAgY29uc3QgW3ZhbHVlLCBzZXRWYWx1ZV0gPSB1c2VTdGF0ZShpbml0aWFsVmFsdWUpO1xuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGNvbnN0IGpzb25WYWx1ZSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKGtleSk7XG4gICAgc2V0VmFsdWUoXG4gICAgICB0eXBlb2YganNvblZhbHVlID09IFwidW5kZWZpbmVkXCIgPyBpbml0aWFsVmFsdWUgOiBKU09OLnBhcnNlKGpzb25WYWx1ZSlcbiAgICApO1xuICB9LCBba2V5XSk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBzZXRWYWx1ZSgoY3VyclZhbHVlKSA9PiB7XG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShrZXksIEpTT04uc3RyaW5naWZ5KGN1cnJWYWx1ZSkpO1xuICAgICAgcmV0dXJuIGN1cnJWYWx1ZTtcbiAgICB9KTtcbiAgfSwgW2tleSwgdmFsdWVdKTtcblxuICByZXR1cm4gW3ZhbHVlLCBzZXRWYWx1ZV07XG59XG4iXSwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJ1c2VMb2NhbFN0b3JhZ2UiLCJrZXkiLCJpbml0aWFsVmFsdWUiLCJ2YWx1ZSIsInNldFZhbHVlIiwianNvblZhbHVlIiwibG9jYWxTdG9yYWdlIiwiZ2V0SXRlbSIsIkpTT04iLCJwYXJzZSIsImN1cnJWYWx1ZSIsInNldEl0ZW0iLCJzdHJpbmdpZnkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./hooks/useLocalStorage.js\n");
-
-/***/ }),
-
-/***/ "./pages/item/[id]/index.js":
-/*!**********************************!*\
-  !*** ./pages/item/[id]/index.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_SizeSelector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/SizeSelector */ \"./components/SizeSelector.jsx\");\n/* harmony import */ var _context_ShoppingCartContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../context/ShoppingCartContext */ \"./context/ShoppingCartContext.js\");\n/* harmony import */ var _utilities_formatCurrency__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../utilities/formatCurrency */ \"./utilities/formatCurrency.js\");\n\n\n\n\n\n\nconst item = ({ item  })=>{\n    const { increaseItemQuantity  } = (0,_context_ShoppingCartContext__WEBPACK_IMPORTED_MODULE_4__.useShoppingCart)();\n    const [size, setSize] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();\n    const [selected, setSelected] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    const [zoom, setZoom] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    const [zoomedImg, setZoomedImg] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();\n    const handleAdd = ()=>{\n        if (selected) {\n            increaseItemQuantity(item._id, item.mainImg, size, item.name);\n            setSelected((currVal)=>!currVal);\n            setSize(\"\");\n        } else {\n            alert(\"Must select size.\");\n        }\n    };\n    const handleSelect = (value)=>{\n        setSize(value);\n        setSelected(!selected);\n    };\n    const handleZoom = (image)=>{\n        setZoomedImg(image);\n        setZoom(!zoom);\n    };\n    const viewerScroll = ()=>{\n        const element = document.getElementById(\"viewer\");\n        if (element) {\n            element.scrollTo(0, 600);\n        }\n    };\n    const handleClickScroll = (section)=>{\n        const element = document.getElementById(section);\n        if (element) {\n            element.scrollIntoView({\n                behavior: \"smooth\"\n            });\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                    children: `${item.name} - ${item.color} | Damn Shop`\n                }, void 0, false, {\n                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                    lineNumber: 51,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                lineNumber: 50,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"static md:relative h-screen w-screen bg-white\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"static md:relative flex flex-col md:flex-row md:items-end md:min-h-[550px] h-screen w-screen md:pb-8\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"flex-1 flex md:items-end md:justify-end md:h-full min-w-max md:pl-2 md:p-0 md:pt-11 md:pr-[16px] lg:pr-[90px]\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    className: \"block static md:relative h-screen w-screen md:h-full md:w-auto \",\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            id: \"imageNav\",\n                                            className: \"h-[90%] w-screen md:h-full md:w-auto overflow-auto hide-scroll\",\n                                            children: item.images.map((image, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                                    className: \"cursor-pointer w-screen md:h-full md:w-auto\",\n                                                    onClick: ()=>handleZoom(image),\n                                                    id: `${index}`,\n                                                    src: `http://localhost:5001${image}`,\n                                                    alt: \"/\",\n                                                    layout: \"responsive\"\n                                                }, index, false, {\n                                                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                                    lineNumber: 62,\n                                                    columnNumber: 19\n                                                }, undefined))\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 57,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            className: \"hidden md:flex absolute flex-col space-y-1 top-0 right-[-30px]\",\n                                            children: item.images.map((image, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                                    onClick: ()=>handleClickScroll(index),\n                                                    src: `http://localhost:5001${image}`,\n                                                    alt: \"/\",\n                                                    className: \"cursor-pointer h-[39px] w-[26px]\",\n                                                    layout: \"responsive\"\n                                                }, index, false, {\n                                                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                                    lineNumber: 75,\n                                                    columnNumber: 19\n                                                }, undefined))\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 73,\n                                            columnNumber: 15\n                                        }, undefined)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                    lineNumber: 56,\n                                    columnNumber: 13\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                lineNumber: 55,\n                                columnNumber: 11\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"fixed bottom-0 w-screen px-6 mx-auto md:static bg-white md:flex-[0.7] flex flex-col md:justify-end font-light\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    className: \"flex flex-col-reverse gap-2 justify-start md:gap-4 md:min-w-[300px] md:h-1/2 lg:pr-14 mt-3 md:mt-14\",\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                            onClick: handleAdd,\n                                            className: \"bg-black text-white mx-[-24px] md:mx-0 text-sm pt-[10px] pb-[8px] md:pt-3 md:pb-2 mt-10 md:mt-0\",\n                                            children: \"ADD TO CART\"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 89,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_SizeSelector__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                                            selected: selected,\n                                            type: item.type,\n                                            size: size,\n                                            handleSelect: handleSelect\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 95,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: (0,_utilities_formatCurrency__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(item.price / 100)\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 101,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            onClick: handleClickScroll,\n                                            children: item.color\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 102,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: \"(A BRIEF DESCRIPTION OF YOUR PRODUCT WOULD GO HERE)\"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 103,\n                                            columnNumber: 15\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                            className: \"\",\n                                            children: item.name\n                                        }, void 0, false, {\n                                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                            lineNumber: 104,\n                                            columnNumber: 15\n                                        }, undefined)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                    lineNumber: 88,\n                                    columnNumber: 13\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                                lineNumber: 87,\n                                columnNumber: 11\n                            }, undefined)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                        lineNumber: 54,\n                        columnNumber: 9\n                    }, undefined),\n                    zoom && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        onLoad: viewerScroll,\n                        id: \"viewer\",\n                        className: \"absolute z-50 top-0 left-0 h-screen w-screen bg-white overflow-scroll overscroll-contain\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                            onClick: ()=>handleZoom(\"\"),\n                            src: `http://localhost:5001${zoomedImg}`,\n                            alt: \"/\",\n                            className: \"cursor-zoom-out w-full\",\n                            layout: \"responsive\"\n                        }, void 0, false, {\n                            fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                            lineNumber: 114,\n                            columnNumber: 13\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                        lineNumber: 109,\n                        columnNumber: 11\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/oscardelossantos/Documents/Software Engineering/Portfolio/notaRealStore/frontend/pages/item/[id]/index.js\",\n                lineNumber: 53,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true);\n};\nconst getServerSideProps = async (context)=>{\n    const itemId = context.params.id.split(\"-p\");\n    const id = itemId[itemId.length - 1];\n    const responce = await fetch(`http://localhost:5001/api/item/${id}`);\n    const item = await responce.json();\n    return {\n        props: {\n            item\n        }\n    };\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (item);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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MkMsSUFBSTs0Q0FDZnpDLE1BQU1BOzRDQUNOYyxjQUFjQTs7Ozs7O3NEQUVoQiw4REFBQzRCO3NEQUFHN0MscUVBQWNBLENBQUNDLEtBQUs2QyxLQUFLLEdBQUc7Ozs7OztzREFDaEMsOERBQUNEOzRDQUFFTixTQUFTYjtzREFBb0J6QixLQUFLOEIsS0FBSzs7Ozs7O3NEQUMxQyw4REFBQ2M7c0RBQUU7Ozs7OztzREFDSCw4REFBQ0U7NENBQUdkLFdBQVU7c0RBQUloQyxLQUFLYSxJQUFJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkFJaENQLHNCQUNDLDhEQUFDeUI7d0JBQ0NnQixRQUFRM0I7d0JBQ1JhLElBQUc7d0JBQ0hELFdBQVU7a0NBRVYsNEVBQUNLOzRCQUNDQyxTQUFTLElBQU1wQixXQUFXOzRCQUMxQnFCLEtBQUssQ0FBQyxxQkFBcUIsRUFBRS9CLFVBQVUsQ0FBQzs0QkFDeENnQyxLQUFJOzRCQUNKUixXQUFVOzRCQUNWUyxRQUFPOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBT3JCO0FBRU8sTUFBTU8scUJBQXFCLE9BQU9DLFVBQVk7SUFDbkQsTUFBTUMsU0FBU0QsUUFBUUUsTUFBTSxDQUFDbEIsRUFBRSxDQUFDbUIsS0FBSyxDQUFDO0lBQ3ZDLE1BQU1uQixLQUFLaUIsTUFBTSxDQUFDQSxPQUFPRyxNQUFNLEdBQUcsRUFBRTtJQUVwQyxNQUFNQyxXQUFXLE1BQU1DLE1BQU0sQ0FBQywrQkFBK0IsRUFBRXRCLEdBQUcsQ0FBQztJQUNuRSxNQUFNakMsT0FBTyxNQUFNc0QsU0FBU0UsSUFBSTtJQUVoQyxPQUFPO1FBQ0xDLE9BQU87WUFDTHpEO1FBQ0Y7SUFDRjtBQUNGLEVBQUU7QUFFRixpRUFBZUEsSUFBSUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Zyb250ZW5kLy4vcGFnZXMvaXRlbS9baWRdL2luZGV4LmpzPzg3NWIiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBTaXplU2VsZWN0b3IgZnJvbSBcIi4uLy4uLy4uL2NvbXBvbmVudHMvU2l6ZVNlbGVjdG9yXCI7XG5pbXBvcnQgeyB1c2VTaG9wcGluZ0NhcnQgfSBmcm9tIFwiLi4vLi4vLi4vY29udGV4dC9TaG9wcGluZ0NhcnRDb250ZXh0XCI7XG5pbXBvcnQgZm9ybWF0Q3VycmVuY3kgZnJvbSBcIi4uLy4uLy4uL3V0aWxpdGllcy9mb3JtYXRDdXJyZW5jeVwiO1xuXG5jb25zdCBpdGVtID0gKHsgaXRlbSB9KSA9PiB7XG4gIGNvbnN0IHsgaW5jcmVhc2VJdGVtUXVhbnRpdHkgfSA9IHVzZVNob3BwaW5nQ2FydCgpO1xuICBjb25zdCBbc2l6ZSwgc2V0U2l6ZV0gPSB1c2VTdGF0ZSgpO1xuICBjb25zdCBbc2VsZWN0ZWQsIHNldFNlbGVjdGVkXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgY29uc3QgW3pvb20sIHNldFpvb21dID0gdXNlU3RhdGUoZmFsc2UpO1xuICBjb25zdCBbem9vbWVkSW1nLCBzZXRab29tZWRJbWddID0gdXNlU3RhdGUoKTtcblxuICBjb25zdCBoYW5kbGVBZGQgPSAoKSA9PiB7XG4gICAgaWYgKHNlbGVjdGVkKSB7XG4gICAgICBpbmNyZWFzZUl0ZW1RdWFudGl0eShpdGVtLl9pZCwgaXRlbS5tYWluSW1nLCBzaXplLCBpdGVtLm5hbWUpO1xuICAgICAgc2V0U2VsZWN0ZWQoKGN1cnJWYWwpID0+ICFjdXJyVmFsKTtcbiAgICAgIHNldFNpemUoXCJcIik7XG4gICAgfSBlbHNlIHtcbiAgICAgIGFsZXJ0KFwiTXVzdCBzZWxlY3Qgc2l6ZS5cIik7XG4gICAgfVxuICB9O1xuXG4gIGNvbnN0IGhhbmRsZVNlbGVjdCA9ICh2YWx1ZSkgPT4ge1xuICAgIHNldFNpemUodmFsdWUpO1xuICAgIHNldFNlbGVjdGVkKCFzZWxlY3RlZCk7XG4gIH07XG5cbiAgY29uc3QgaGFuZGxlWm9vbSA9IChpbWFnZSkgPT4ge1xuICAgIHNldFpvb21lZEltZyhpbWFnZSk7XG4gICAgc2V0Wm9vbSghem9vbSk7XG4gIH07XG5cbiAgY29uc3Qgdmlld2VyU2Nyb2xsID0gKCkgPT4ge1xuICAgIGNvbnN0IGVsZW1lbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcInZpZXdlclwiKTtcbiAgICBpZiAoZWxlbWVudCkge1xuICAgICAgZWxlbWVudC5zY3JvbGxUbygwLCA2MDApO1xuICAgIH1cbiAgfTtcblxuICBjb25zdCBoYW5kbGVDbGlja1Njcm9sbCA9IChzZWN0aW9uKSA9PiB7XG4gICAgY29uc3QgZWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKHNlY3Rpb24pO1xuICAgIGlmIChlbGVtZW50KSB7XG4gICAgICBlbGVtZW50LnNjcm9sbEludG9WaWV3KHsgYmVoYXZpb3I6IFwic21vb3RoXCIgfSk7XG4gICAgfVxuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8dGl0bGU+e2Ake2l0ZW0ubmFtZX0gLSAke2l0ZW0uY29sb3J9IHwgRGFtbiBTaG9wYH08L3RpdGxlPlxuICAgICAgPC9IZWFkPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJzdGF0aWMgbWQ6cmVsYXRpdmUgaC1zY3JlZW4gdy1zY3JlZW4gYmctd2hpdGVcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzdGF0aWMgbWQ6cmVsYXRpdmUgZmxleCBmbGV4LWNvbCBtZDpmbGV4LXJvdyBtZDppdGVtcy1lbmQgbWQ6bWluLWgtWzU1MHB4XSBoLXNjcmVlbiB3LXNjcmVlbiBtZDpwYi04XCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4LTEgZmxleCBtZDppdGVtcy1lbmQgbWQ6anVzdGlmeS1lbmQgbWQ6aC1mdWxsIG1pbi13LW1heCBtZDpwbC0yIG1kOnAtMCBtZDpwdC0xMSBtZDpwci1bMTZweF0gbGc6cHItWzkwcHhdXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJsb2NrIHN0YXRpYyBtZDpyZWxhdGl2ZSBoLXNjcmVlbiB3LXNjcmVlbiBtZDpoLWZ1bGwgbWQ6dy1hdXRvIFwiPlxuICAgICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgICAgaWQ9XCJpbWFnZU5hdlwiXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiaC1bOTAlXSB3LXNjcmVlbiBtZDpoLWZ1bGwgbWQ6dy1hdXRvIG92ZXJmbG93LWF1dG8gaGlkZS1zY3JvbGxcIlxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAge2l0ZW0uaW1hZ2VzLm1hcCgoaW1hZ2UsIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgICAgICA8aW1nXG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImN1cnNvci1wb2ludGVyIHctc2NyZWVuIG1kOmgtZnVsbCBtZDp3LWF1dG9cIlxuICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBoYW5kbGVab29tKGltYWdlKX1cbiAgICAgICAgICAgICAgICAgICAgaWQ9e2Ake2luZGV4fWB9XG4gICAgICAgICAgICAgICAgICAgIGtleT17aW5kZXh9XG4gICAgICAgICAgICAgICAgICAgIHNyYz17YGh0dHA6Ly9sb2NhbGhvc3Q6NTAwMSR7aW1hZ2V9YH1cbiAgICAgICAgICAgICAgICAgICAgYWx0PVwiL1wiXG4gICAgICAgICAgICAgICAgICAgIGxheW91dD1cInJlc3BvbnNpdmVcIlxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIG1kOmZsZXggYWJzb2x1dGUgZmxleC1jb2wgc3BhY2UteS0xIHRvcC0wIHJpZ2h0LVstMzBweF1cIj5cbiAgICAgICAgICAgICAgICB7aXRlbS5pbWFnZXMubWFwKChpbWFnZSwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgICAgIDxpbWdcbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gaGFuZGxlQ2xpY2tTY3JvbGwoaW5kZXgpfVxuICAgICAgICAgICAgICAgICAgICBrZXk9e2luZGV4fVxuICAgICAgICAgICAgICAgICAgICBzcmM9e2BodHRwOi8vbG9jYWxob3N0OjUwMDEke2ltYWdlfWB9XG4gICAgICAgICAgICAgICAgICAgIGFsdD1cIi9cIlxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJjdXJzb3ItcG9pbnRlciBoLVszOXB4XSB3LVsyNnB4XVwiXG4gICAgICAgICAgICAgICAgICAgIGxheW91dD1cInJlc3BvbnNpdmVcIlxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZpeGVkIGJvdHRvbS0wIHctc2NyZWVuIHB4LTYgbXgtYXV0byBtZDpzdGF0aWMgYmctd2hpdGUgbWQ6ZmxleC1bMC43XSBmbGV4IGZsZXgtY29sIG1kOmp1c3RpZnktZW5kIGZvbnQtbGlnaHRcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbC1yZXZlcnNlIGdhcC0yIGp1c3RpZnktc3RhcnQgbWQ6Z2FwLTQgbWQ6bWluLXctWzMwMHB4XSBtZDpoLTEvMiBsZzpwci0xNCBtdC0zIG1kOm10LTE0XCI+XG4gICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVBZGR9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYmctYmxhY2sgdGV4dC13aGl0ZSBteC1bLTI0cHhdIG1kOm14LTAgdGV4dC1zbSBwdC1bMTBweF0gcGItWzhweF0gbWQ6cHQtMyBtZDpwYi0yIG10LTEwIG1kOm10LTBcIlxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgQUREIFRPIENBUlRcbiAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDxTaXplU2VsZWN0b3JcbiAgICAgICAgICAgICAgICBzZWxlY3RlZD17c2VsZWN0ZWR9XG4gICAgICAgICAgICAgICAgdHlwZT17aXRlbS50eXBlfVxuICAgICAgICAgICAgICAgIHNpemU9e3NpemV9XG4gICAgICAgICAgICAgICAgaGFuZGxlU2VsZWN0PXtoYW5kbGVTZWxlY3R9XG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgIDxwPntmb3JtYXRDdXJyZW5jeShpdGVtLnByaWNlIC8gMTAwKX08L3A+XG4gICAgICAgICAgICAgIDxwIG9uQ2xpY2s9e2hhbmRsZUNsaWNrU2Nyb2xsfT57aXRlbS5jb2xvcn08L3A+XG4gICAgICAgICAgICAgIDxwPihBIEJSSUVGIERFU0NSSVBUSU9OIE9GIFlPVVIgUFJPRFVDVCBXT1VMRCBHTyBIRVJFKTwvcD5cbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIlwiPntpdGVtLm5hbWV9PC9oMz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAge3pvb20gJiYgKFxuICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgIG9uTG9hZD17dmlld2VyU2Nyb2xsfVxuICAgICAgICAgICAgaWQ9XCJ2aWV3ZXJcIlxuICAgICAgICAgICAgY2xhc3NOYW1lPVwiYWJzb2x1dGUgei01MCB0b3AtMCBsZWZ0LTAgaC1zY3JlZW4gdy1zY3JlZW4gYmctd2hpdGUgb3ZlcmZsb3ctc2Nyb2xsIG92ZXJzY3JvbGwtY29udGFpblwiXG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGltZ1xuICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBoYW5kbGVab29tKFwiXCIpfVxuICAgICAgICAgICAgICBzcmM9e2BodHRwOi8vbG9jYWxob3N0OjUwMDEke3pvb21lZEltZ31gfVxuICAgICAgICAgICAgICBhbHQ9XCIvXCJcbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiY3Vyc29yLXpvb20tb3V0IHctZnVsbFwiXG4gICAgICAgICAgICAgIGxheW91dD1cInJlc3BvbnNpdmVcIlxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKX1cbiAgICAgIDwvZGl2PlxuICAgIDwvPlxuICApO1xufTtcblxuZXhwb3J0IGNvbnN0IGdldFNlcnZlclNpZGVQcm9wcyA9IGFzeW5jIChjb250ZXh0KSA9PiB7XG4gIGNvbnN0IGl0ZW1JZCA9IGNvbnRleHQucGFyYW1zLmlkLnNwbGl0KFwiLXBcIik7XG4gIGNvbnN0IGlkID0gaXRlbUlkW2l0ZW1JZC5sZW5ndGggLSAxXTtcblxuICBjb25zdCByZXNwb25jZSA9IGF3YWl0IGZldGNoKGBodHRwOi8vbG9jYWxob3N0OjUwMDEvYXBpL2l0ZW0vJHtpZH1gKTtcbiAgY29uc3QgaXRlbSA9IGF3YWl0IHJlc3BvbmNlLmpzb24oKTtcblxuICByZXR1cm4ge1xuICAgIHByb3BzOiB7XG4gICAgICBpdGVtLFxuICAgIH0sXG4gIH07XG59O1xuXG5leHBvcnQgZGVmYXVsdCBpdGVtO1xuIl0sIm5hbWVzIjpbIkhlYWQiLCJ1c2VTdGF0ZSIsIlNpemVTZWxlY3RvciIsInVzZVNob3BwaW5nQ2FydCIsImZvcm1hdEN1cnJlbmN5IiwiaXRlbSIsImluY3JlYXNlSXRlbVF1YW50aXR5Iiwic2l6ZSIsInNldFNpemUiLCJzZWxlY3RlZCIsInNldFNlbGVjdGVkIiwiem9vbSIsInNldFpvb20iLCJ6b29tZWRJbWciLCJzZXRab29tZWRJbWciLCJoYW5kbGVBZGQiLCJfaWQiLCJtYWluSW1nIiwibmFtZSIsImN1cnJWYWwiLCJhbGVydCIsImhhbmRsZVNlbGVjdCIsInZhbHVlIiwiaGFuZGxlWm9vbSIsImltYWdlIiwidmlld2VyU2Nyb2xsIiwiZWxlbWVudCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJzY3JvbGxUbyIsImhhbmRsZUNsaWNrU2Nyb2xsIiwic2VjdGlvbiIsInNjcm9sbEludG9WaWV3IiwiYmVoYXZpb3IiLCJ0aXRsZSIsImNvbG9yIiwiZGl2IiwiY2xhc3NOYW1lIiwiaWQiLCJpbWFnZXMiLCJtYXAiLCJpbmRleCIsImltZyIsIm9uQ2xpY2siLCJzcmMiLCJhbHQiLCJsYXlvdXQiLCJidXR0b24iLCJ0eXBlIiwicCIsInByaWNlIiwiaDMiLCJvbkxvYWQiLCJnZXRTZXJ2ZXJTaWRlUHJvcHMiLCJjb250ZXh0IiwiaXRlbUlkIiwicGFyYW1zIiwic3BsaXQiLCJsZW5ndGgiLCJyZXNwb25jZSIsImZldGNoIiwianNvbiIsInByb3BzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/item/[id]/index.js\n");
-
-/***/ }),
-
-/***/ "./utilities/formatCurrency.js":
-/*!*************************************!*\
-  !*** ./utilities/formatCurrency.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {\n    currency: \"USD\",\n    style: \"currency\"\n});\nconst formatCurrency = (number)=>{\n    return CURRENCY_FORMATTER.format(number);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (formatCurrency);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi91dGlsaXRpZXMvZm9ybWF0Q3VycmVuY3kuanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLE1BQU1BLHFCQUFxQixJQUFJQyxLQUFLQyxZQUFZLENBQUNDLFdBQVc7SUFDMURDLFVBQVU7SUFDVkMsT0FBTztBQUNUO0FBRUEsTUFBTUMsaUJBQWlCLENBQUNDLFNBQVc7SUFDakMsT0FBT1AsbUJBQW1CUSxNQUFNLENBQUNEO0FBQ25DO0FBRUEsaUVBQWVELGNBQWNBLEVBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9mcm9udGVuZC8uL3V0aWxpdGllcy9mb3JtYXRDdXJyZW5jeS5qcz9hYWNlIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IENVUlJFTkNZX0ZPUk1BVFRFUiA9IG5ldyBJbnRsLk51bWJlckZvcm1hdCh1bmRlZmluZWQsIHtcbiAgY3VycmVuY3k6ICdVU0QnLFxuICBzdHlsZTogJ2N1cnJlbmN5J1xufSlcblxuY29uc3QgZm9ybWF0Q3VycmVuY3kgPSAobnVtYmVyKSA9PiB7XG4gIHJldHVybiBDVVJSRU5DWV9GT1JNQVRURVIuZm9ybWF0KG51bWJlcilcbn1cblxuZXhwb3J0IGRlZmF1bHQgZm9ybWF0Q3VycmVuY3kiXSwibmFtZXMiOlsiQ1VSUkVOQ1lfRk9STUFUVEVSIiwiSW50bCIsIk51bWJlckZvcm1hdCIsInVuZGVmaW5lZCIsImN1cnJlbmN5Iiwic3R5bGUiLCJmb3JtYXRDdXJyZW5jeSIsIm51bWJlciIsImZvcm1hdCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./utilities/formatCurrency.js\n");
-
-/***/ }),
-
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ 968:
 /***/ ((module) => {
 
 module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -100,7 +279,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/item/[id]/index.js"));
+var __webpack_exports__ = __webpack_require__.X(0, [342], () => (__webpack_exec__(3000)));
 module.exports = __webpack_exports__;
 
 })();
