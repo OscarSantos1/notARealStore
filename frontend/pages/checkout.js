@@ -1,3 +1,4 @@
+import Head from "next/head";
 import axios from "axios";
 import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
@@ -99,39 +100,44 @@ const checkout = () => {
   const { token } = useShoppingCart();
 
   return (
-    <Elements stripe={stripePromise}>
-      <div className="flex-col w-screen h-screen pt-48 px-5 md:px-10 backdrop-blur-[13px] bg-white/90">
-        {token ? (
-          <>
-            <h1 className="mb-10 text-gray-300">ENTER YOUR CARD DETAILS</h1>
-            <h1 className="text-red-600">
-              DO NOT ENTER YOUR CREDIT CARD INFORMATION SO YOU DON'T GET
-              ACTUALLY CHARGED.
-            </h1>
-            <p className="mb-2 jostfamily">
-              If you wanna try making a payment and getting a confirmation
-              e-mail, use the following test credit card info:
-            </p>
-            <div className="jostfamily">
-              <p>Number: 4242 4242 4242 4242</p>
-              <p>Expiration date: 11/44</p>
-              <p>CVC: 444</p>
-              <p className="mb-9">ZIP: 44444</p>
-            </div>
+    <>
+      <Head>
+        <title>Checkout - NotARealStore</title>
+      </Head>
+      <Elements stripe={stripePromise}>
+        <div className="flex-col w-screen h-screen pt-48 px-5 md:px-10 backdrop-blur-[13px] bg-white/90">
+          {token ? (
+            <>
+              <h1 className="mb-10 text-gray-300">ENTER YOUR CARD DETAILS</h1>
+              <h1 className="text-red-600">
+                DO NOT ENTER YOUR CREDIT CARD INFORMATION SO YOU DON'T GET
+                ACTUALLY CHARGED.
+              </h1>
+              <p className="mb-2 jostfamily">
+                If you wanna try making a payment and getting a confirmation
+                e-mail, use the following test credit card info:
+              </p>
+              <div className="jostfamily">
+                <p>Number: 4242 4242 4242 4242</p>
+                <p>Expiration date: 11/44</p>
+                <p>CVC: 444</p>
+                <p className="mb-9">ZIP: 44444</p>
+              </div>
 
-            <div className="h-72 w-full md:w-1/2 lg:w-1/3 mb-16">
-              <CheckoutForm />
+              <div className="h-72 w-full md:w-1/2 lg:w-1/3 mb-16">
+                <CheckoutForm />
+              </div>
+            </>
+          ) : (
+            <div className="flex justify-center font-light mt-36">
+              <div className="bg-black text-white py-2 pt-3 p-4">
+                LOG IN TO COMPLETE YOUR ORDER
+              </div>
             </div>
-          </>
-        ) : (
-          <div className="flex justify-center font-light mt-36">
-            <div className="bg-black text-white py-2 pt-3 p-4">
-              LOG IN TO COMPLETE YOUR ORDER
-            </div>
-          </div>
-        )}
-      </div>
-    </Elements>
+          )}
+        </div>
+      </Elements>
+    </>
   );
 };
 

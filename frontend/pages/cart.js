@@ -13,7 +13,7 @@ const cart = () => {
   return (
     <>
       <Head>
-        <title>Cart - Damn Shop</title>
+        <title>Cart - NotARealStore</title>
       </Head>
       <div
         className={

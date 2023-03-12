@@ -48,7 +48,7 @@ const item = ({ item }) => {
   return (
     <>
       <Head>
-        <title>{`${item.name} - ${item.color} | Damn Shop`}</title>
+        <title>{`${item.name} - ${item.color} | NotARealStore`}</title>
       </Head>
       <div className="static md:relative h-screen w-screen bg-white">
         <div className="static md:relative flex flex-col md:flex-row md:items-end md:min-h-[550px] h-screen w-screen md:pb-8">
