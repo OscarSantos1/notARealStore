@@ -85,7 +85,9 @@ const Navbar = () => {
               </button>
             </Link>
           )}
-          <button className="pt-1 cursor-pointer">ABOUT</button>
+          <Link href="/about">
+            <button className="pt-1 cursor-pointer">ABOUT</button>
+          </Link>
         </div>
       </div>
       <div

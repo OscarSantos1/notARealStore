@@ -42,7 +42,7 @@ const LogIn = ({
       response = await axios.post(`${APP_API_URL}/users/login`, payload);
       if (response.data.msg === "invalid")
         msg = "Invalid username and/or password";
-      if (response.data.msg === "Success!") msg = "You're in";
+      if (response.data.msg === "Success!") msg = "Welcome!";
     }
     console.log(response.data.token);
     setToken(response.data.token);
