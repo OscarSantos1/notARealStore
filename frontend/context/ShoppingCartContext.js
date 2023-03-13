@@ -29,9 +29,11 @@ export function ShoppingCartProvider({ children }) {
   const increaseItemQuantity = (id, image, size, name) => {
     setCartItems((currItems) => {
       if (
-        currItems.find((item) => item.id === id && item.size === size) == null
+        currItems?.find((item) => item.id === id && item.size === size) == null
       ) {
-        return [...currItems, { id, quantity: 1, size }];
+        return currItems
+          ? [...currItems, { id, quantity: 1, size }]
+          : [{ id, quantity: 1, size }];
       } else {
         return currItems.map((item) => {
           if (item.id === id && item.size === size) {

@@ -22,10 +22,10 @@ const CartItem = ({ id, quantity, size }) => {
       const fetchedItem = await responce.json();
       setItem(fetchedItem);
       setCartItems((currItems) => {
-        if (currItems.find((i) => i.id === id) == null) {
+        if (currItems?.find((i) => i.id === id) == null) {
           return;
         } else {
-          return currItems.map((i) => {
+          return currItems?.map((i) => {
             if (i.id === id) {
               return { ...i, ...fetchedItem };
             } else {

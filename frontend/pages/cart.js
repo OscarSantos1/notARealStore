@@ -17,14 +17,14 @@ const cart = () => {
       </Head>
       <div
         className={
-          cartItems.length !== 0
+          cartItems?.length !== 0
             ? "relative flex justify-start h-screen w-screen pb-[48px] pt-[79px] md:pt-40 md:px-20"
             : "relative flex justify-center items-center h-screen w-screen pb-[48px] md:pb-[200px] pt-[79px] md:pt-40 md:px-20"
         }
       >
         <div className="flex flex-col md:flex-row items-center justify-start md:h-96 min-w-[400px] pb-6 md:pb-0 overflow-auto hide-scroll overscroll-contain">
-          {cartItems.length !== 0 ? (
-            cartItems.map((item, index) => (
+          {cartItems?.length !== 0 ? (
+            cartItems?.map((item, index) => (
               <CartItem
                 key={index}
                 id={item.id}
@@ -41,10 +41,10 @@ const cart = () => {
             </div>
           )}
         </div>
-        {cartItems.length !== 0 && (
+        {cartItems && cartItems?.length !== 0 ? (
           <div className="absolute flex items-center justify-end p-3 pl-1 bottom-0 right-0 left-0 space-x-8 text-sm bg-slate-200/80">
             <h6 className="font-light">{`TOTAL ${formatCurrency(
-              cartItems.reduce(
+              cartItems?.reduce(
                 (total, cartItem) =>
                   total + (cartItem.price / 100) * cartItem.quantity,
                 0
@@ -56,6 +56,8 @@ const cart = () => {
               </button>
             </Link>
           </div>
+        ) : (
+          ""
         )}
       </div>
     </>

@@ -1,14 +1,8 @@
 {
+  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/cart": "pages/cart.html",
-  "/about": "pages/about.html",
-  "/checkout": "pages/checkout.html",
-  "/confirmation": "pages/confirmation.html",
-  "/_app": "pages/_app.js",
-  "/user": "pages/user.html",
-  "/": "pages/index.html",
-  "/item/[id]": "pages/item/[id].js",
   "/catalogue/[id]": "pages/catalogue/[id].js",
-  "/404": "pages/404.html"
+  "/cart": "pages/cart.js",
+  "/item/[id]": "pages/item/[id].js"
 }
