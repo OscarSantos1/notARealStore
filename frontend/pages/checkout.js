@@ -20,7 +20,10 @@ const stripePromise = loadStripe(
 const CheckoutForm = () => {
   const { userName, setCartItems } = useShoppingCart();
   const [loading, setLoading] = useState(false);
-  const APP_API_URL = "http://localhost:5001";
+  const domain =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:5001/"
+      : "https://notarealstore.herokuapp.com/";
   const stripe = useStripe();
   const elements = useElements();
   const router = useRouter();
@@ -39,7 +42,7 @@ const CheckoutForm = () => {
     if (!error) {
       const { id } = paymentMethod;
       try {
-        const { data } = await axios.post(`${APP_API_URL}/api/checkout`, {
+        const { data } = await axios.post(`${domain}api/checkout`, {
           id,
           amount: 10000,
         });
@@ -51,19 +54,16 @@ const CheckoutForm = () => {
             pretty: true,
           });
           // SENDING EMAIL
-          const response = await fetch(
-            `${APP_API_URL}/api/emails/confirmation`,
-            {
-              method: "POST",
-              headers: new Headers({
-                Authorization: header,
-                "Content-Type": "application/json",
-              }),
-              body: JSON.stringify({
-                html: markup,
-              }),
-            }
-          );
+          const response = await fetch(`${domain}api/emails/confirmation`, {
+            method: "POST",
+            headers: new Headers({
+              Authorization: header,
+              "Content-Type": "application/json",
+            }),
+            body: JSON.stringify({
+              html: markup,
+            }),
+          });
           setCartItems([]);
           if (response.status === 200) {
             router.push("/confirmation");

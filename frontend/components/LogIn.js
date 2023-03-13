@@ -15,7 +15,10 @@ const LogIn = ({
   name,
   setName,
 }) => {
-  const APP_API_URL = "http://localhost:5001";
+  const domain =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:5001/"
+      : "https://notarealstore.herokuapp.com/";
   const { setToken, setUserName } = useShoppingCart();
   useEffect(() => {
     sessionStorage.removeItem("doMeToken");
@@ -34,12 +37,12 @@ const LogIn = ({
 
     if (register) {
       payload = { name: name, email: email, password: pass };
-      response = await axios.post(`${APP_API_URL}/users`, payload);
+      response = await axios.post(`${domain}users`, payload);
       if (response.data.msg === "taken") msg = "Username already taken";
       if (response.data.msg === "success") msg = "Success";
     } else {
       payload = { email: email, password: pass };
-      response = await axios.post(`${APP_API_URL}/users/login`, payload);
+      response = await axios.post(`${domain}users/login`, payload);
       if (response.data.msg === "invalid")
         msg = "Invalid username and/or password";
       if (response.data.msg === "Success!") msg = "Welcome!";

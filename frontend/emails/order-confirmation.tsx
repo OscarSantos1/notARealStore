@@ -10,6 +10,10 @@ import { Text } from "@react-email/text";
 import * as React from "react";
 
 export default function Email({ userName }) {
+  const domain =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:5001/"
+      : "https://notarealstore.herokuapp.com/";
   return (
     <Html>
       <Head />
@@ -27,7 +31,7 @@ export default function Email({ userName }) {
           </Button>
           <Text style={footer}>
             <Link
-              href="http://localhost:7200/"
+              href={domain}
               target="_blank"
               style={{ ...link, color: "#898989" }}
             >

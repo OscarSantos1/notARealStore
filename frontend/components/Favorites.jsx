@@ -5,7 +5,11 @@ const Hero = () => {
   const [cataloge, setCataloge] = useState({});
   useEffect(() => {
     const getFav = async () => {
-      const responce = await fetch(`http://localhost:5001/api/favourites`);
+      const domain =
+        process.env.NODE_ENV == "development"
+          ? "http://localhost:5001/"
+          : "https://notarealstore.herokuapp.com/";
+      const responce = await fetch(`${domain}api/favourites`);
       console.log(responce);
       const cat = await responce?.json();
       console.log(cat);

@@ -9,10 +9,14 @@ const user = () => {
   const { userName, setUserName, token, setToken } = useShoppingCart();
   useEffect(() => {
     const fetchUser = async () => {
+      const domain =
+        process.env.NODE_ENV == "development"
+          ? "http://localhost:5001/"
+          : "https://notarealstore.herokuapp.com/";
       const header =
         "Bearer " + localStorage.getItem("jwt-token").replace(/"|'/g, "");
       const head = { headers: { Authorization: header } };
-      const response = await fetch("http://localhost:5001/users/me", head);
+      const response = await fetch("${domain}users/me", head);
       const userData = await response.json();
       console.log(userData);
     };
