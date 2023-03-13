@@ -9,7 +9,7 @@ const ItemCard = ({ id, image, name, price }) => {
     <div className="bg-slate-100 p-2">
       <Link href="/item/[id]" as={`/item/${route}`}>
         <img
-          src={`http://localhost:5001${image}`}
+          src={`${image}`}
           alt="/"
           className="cursor-pointer"
           layout="responsive"

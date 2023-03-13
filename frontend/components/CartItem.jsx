@@ -18,7 +18,11 @@ const CartItem = ({ id, quantity, size }) => {
 
   useEffect(() => {
     const getItemFromServer = async () => {
-      const responce = await fetch(`http://localhost:5001/api/item/${id}`);
+      const domain =
+        process.env.NODE_ENV == "development"
+          ? "http://localhost:5001/"
+          : "https://notarealstore.herokuapp.com/";
+      const responce = await fetch(`${domain}api/item/${id}`);
       const fetchedItem = await responce.json();
       setItem(fetchedItem);
       setCartItems((currItems) => {
@@ -50,7 +54,7 @@ const CartItem = ({ id, quantity, size }) => {
           <div>
             <Link href="/item/[id]" as={`/item/${route}`}>
               <img
-                src={`http://localhost:5001${item.mainImg}`}
+                src={`${item.mainImg}`}
                 alt="/"
                 className="cursor-pointer max-h-[880px]"
               />

@@ -52,7 +52,7 @@ const FloatingCart = () => {
               <IoIosArrowDown size={20} />
             </div>
             <div className="rounded-3xl overflow-hidden h-60">
-              <img src={`http://localhost:5001${lastAdded.image}`} />
+              <img src={`${lastAdded.image}`} />
             </div>
             <div className="font-normal mt-3">{lastAdded.name}</div>
             <div className="overflow-hidden mt-1">

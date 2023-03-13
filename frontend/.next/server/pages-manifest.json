@@ -2,7 +2,13 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/cart": "pages/cart.js",
+  "/cart": "pages/cart.html",
+  "/": "pages/index.html",
+  "/about": "pages/about.html",
+  "/confirmation": "pages/confirmation.html",
+  "/user": "pages/user.html",
   "/catalogue/[id]": "pages/catalogue/[id].js",
-  "/": "pages/index.js"
+  "/checkout": "pages/checkout.html",
+  "/item/[id]": "pages/item/[id].js",
+  "/404": "pages/404.html"
 }

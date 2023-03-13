@@ -64,7 +64,7 @@ const item = ({ item }) => {
                     onClick={() => handleZoom(image)}
                     id={`${index}`}
                     key={index}
-                    src={`http://localhost:5001${image}`}
+                    src={`${image}`}
                     alt="/"
                     layout="responsive"
                   />
@@ -75,7 +75,7 @@ const item = ({ item }) => {
                   <img
                     onClick={() => handleClickScroll(index)}
                     key={index}
-                    src={`http://localhost:5001${image}`}
+                    src={`${image}`}
                     alt="/"
                     className="cursor-pointer h-[39px] w-[26px]"
                     layout="responsive"
@@ -113,7 +113,7 @@ const item = ({ item }) => {
           >
             <img
               onClick={() => handleZoom("")}
-              src={`http://localhost:5001${zoomedImg}`}
+              src={`${zoomedImg}`}
               alt="/"
               className="cursor-zoom-out w-full"
               layout="responsive"
@@ -128,8 +128,11 @@ const item = ({ item }) => {
 export const getServerSideProps = async (context) => {
   const itemId = context.params.id.split("-p");
   const id = itemId[itemId.length - 1];
-
-  const responce = await fetch(`http://localhost:5001/api/item/${id}`);
+  const domain =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:5001/"
+      : "https://notarealstore.herokuapp.com/";
+  const responce = await fetch(`${domain}api/item/${id}`);
   const item = await responce.json();
 
   return {

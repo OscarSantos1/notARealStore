@@ -20,9 +20,11 @@ const cataloge = ({ cataloge }) => {
 };
 
 export const getServerSideProps = async (context) => {
-  const responce = await fetch(
-    `http://localhost:5001/api/catalogue/${context.params.id}`
-  );
+  const domain =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:5001/"
+      : "https://notarealstore.herokuapp.com/";
+  const responce = await fetch(`${domain}api/catalogue/${context.params.id}`);
   const cataloge = await responce.json();
 
   return {
