@@ -22,7 +22,7 @@ const cart = () => {
             : "relative flex justify-center items-center h-screen w-screen pb-[48px] md:pb-[200px] pt-[79px] md:pt-40 md:px-20"
         }
       >
-        <div className="flex flex-col md:flex-row items-center justify-start md:h-96 min-w-[400px] pb-6 md:pb-0 overflow-auto hide-scroll overscroll-contain">
+        <div className="flex flex-col md:flex-row items-center justify-start md:h-96 md:min-w-[400px] pl-7 md:pl-0 pb-6 md:pb-0 overflow-auto hide-scroll overscroll-contain">
           {cartItems?.length !== 0 ? (
             cartItems?.map((item, index) => (
               <CartItem
