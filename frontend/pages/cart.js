@@ -42,7 +42,7 @@ const cart = () => {
           )}
         </div>
         {cartItems && cartItems?.length !== 0 ? (
-          <div className="absolute flex items-center justify-end p-3 pl-1 bottom-0 right-0 left-0 space-x-8 text-sm bg-slate-200/80">
+          <div className="fixed flex items-center justify-end p-3 pl-1 bottom-0 right-0 left-0 space-x-8 text-sm bg-slate-200/80">
             <h6 className="font-light">{`TOTAL ${formatCurrency(
               cartItems?.reduce(
                 (total, cartItem) =>
