@@ -2,7 +2,9 @@ const nodemailer = require("nodemailer");
 const User = require("../models/userModel");
 
 const transporter = nodemailer.createTransport({
-  service: "hotmail",
+  host: "smtp.office365.com",
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD,
