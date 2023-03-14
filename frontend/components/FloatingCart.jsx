@@ -99,7 +99,7 @@ const FloatingCart = () => {
             setFastClose(true);
             stopClose();
           }}
-          className="absolute h-screen bottom-0 z-30 bg-white/40 w-screen"
+          className="absolute h-screen bottom-0 z-30 backdrop-blur-sm w-screen"
         ></div>
       )}
     </div>
