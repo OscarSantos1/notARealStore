@@ -72,7 +72,7 @@ const CheckoutForm = () => {
           if (response.status === 500) {
             const res = await response.json();
             router.push("/confirmation");
-            alert(res.msg);
+            console.log(res.msg);
           }
         } else {
           alert("Somenthing went wrong with your payment");
