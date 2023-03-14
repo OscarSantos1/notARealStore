@@ -20,11 +20,11 @@ const sendConfirmation = async (req, res) => {
       subject: "Thank you for your purchase!",
       html: req.body.html,
     };
-    transporter.sendMail(options);
+    await transporter.sendMail(options);
     res.status(200).send();
   } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: "Internal server error" });
+    console.log(error.response);
+    res.status(500).send({ msg: error.response });
   }
 };
 

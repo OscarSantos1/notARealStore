@@ -67,10 +67,12 @@ const CheckoutForm = () => {
           setCartItems([]);
           if (response.status === 200) {
             router.push("/confirmation");
+            console.log("All good");
           }
           if (response.status === 500) {
-            const { error } = await response.json();
-            alert(error);
+            const res = await response.json();
+            router.push("/confirmation");
+            alert(res.msg);
           }
         } else {
           alert("Somenthing went wrong with your payment");

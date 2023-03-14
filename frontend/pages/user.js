@@ -16,7 +16,7 @@ const user = () => {
       const header =
         "Bearer " + localStorage.getItem("jwt-token").replace(/"|'/g, "");
       const head = { headers: { Authorization: header } };
-      const response = await fetch("${domain}users/me", head);
+      const response = await fetch(`${domain}users/me`, head);
       const userData = await response.json();
       console.log(userData);
     };
